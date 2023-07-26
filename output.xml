@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230726 22:33:42.204" rpa="false" schemaversion="4">
+<suite id="s1" name="Justy panelscout robotframework" source="D:\_Mine\Documents\GitHub\Justy_panelscout_robotframework">
+<suite id="s1-s1" name="Subtask 1" source="D:\_Mine\Documents\GitHub\Justy_panelscout_robotframework\Subtask_1.robot">
+<test id="s1-s1-t1" name="Change language to Polish" line="47">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230726 22:33:42.829" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 22:33:42.829" endtime="20230726 22:33:47.422"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230726 22:33:47.497" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 22:33:47.423" endtime="20230726 22:33:47.497"/>
+</kw>
+<status status="PASS" starttime="20230726 22:33:42.829" endtime="20230726 22:33:47.498"/>
+</kw>
+<kw name="Click on the Change language button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LANGUAGELISTBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230726 22:33:47.500" level="INFO">Clicking element 'xpath=//div[2]/div/div'.</msg>
+<status status="PASS" starttime="20230726 22:33:47.499" endtime="20230726 22:33:47.669"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POLSKIOPTIONBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230726 22:33:47.669" level="INFO">Clicking element 'xpath=//div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230726 22:33:47.669" endtime="20230726 22:33:47.871"/>
+</kw>
+<status status="PASS" starttime="20230726 22:33:47.498" endtime="20230726 22:33:47.871"/>
+</kw>
+<kw name="Assert language change">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNINBUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230726 22:33:47.871" endtime="20230726 22:33:47.987"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - zaloguj</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230726 22:33:48.002" level="INFO">Page title is 'Scouts panel - zaloguj'.</msg>
+<status status="PASS" starttime="20230726 22:33:47.987" endtime="20230726 22:33:48.002"/>
+</kw>
+<status status="PASS" starttime="20230726 22:33:47.871" endtime="20230726 22:33:48.002"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230726 22:33:48.002" endtime="20230726 22:33:51.168"/>
+</kw>
+<status status="PASS" starttime="20230726 22:33:42.814" endtime="20230726 22:33:51.168"/>
+</test>
+<doc>Suite description #automated tests for scout website</doc>
+<status status="PASS" starttime="20230726 22:33:42.251" endtime="20230726 22:33:51.168"/>
+</suite>
+<status status="PASS" starttime="20230726 22:33:42.204" endtime="20230726 22:33:51.168"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Justy panelscout robotframework">Justy panelscout robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Subtask 1">Justy panelscout robotframework.Subtask 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
